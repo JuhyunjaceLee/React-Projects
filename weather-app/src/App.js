@@ -6,6 +6,7 @@ import CityButton from "./components/CityButton";
 function App() {
   const [weatherInfo, setWeatherInfo] = useState(null);
   const cities = ["Seoul", "New York", "Sydney", "London", "Dubai"];
+  const [city, setCity] = useState("");
   const getCurrentLocation = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       const lat = position.coords.latitude;
@@ -18,16 +19,34 @@ function App() {
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`;
     let response = await fetch(url);
     let data = await response.json();
-    console.log(data);
     setWeatherInfo(data);
   };
+  const getWeatherByCity = async () => {
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=380c41b8594bc9bd3a40c6c4a9925257&units=metric`;
+    let response = await fetch(url);
+    let data = await response.json();
+    setWeatherInfo(data);
+    console.log(data);
+  };
   useEffect(() => {
-    getCurrentLocation();
-  }, []);
+    {
+      if (city === "current") {
+        getCurrentLocation();
+      } else {
+        getWeatherByCity();
+      }
+    }
+  }, [city]);
+  // useEffect(() => {
+  //   {
+  //     !city ? getCurrentLocation() : getWeatherByCity();
+  //   }
+  // }, [city]);
+
   return (
     <div className="main">
       <DashBoard weatherInfo={weatherInfo} />
-      <CityButton cities={cities} />
+      <CityButton cities={cities} setCity={setCity} />
     </div>
   );
 }
