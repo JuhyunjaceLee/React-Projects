@@ -7,6 +7,7 @@ function App() {
   const [weatherInfo, setWeatherInfo] = useState(null);
   const cities = ["Seoul", "New York", "Sydney", "London", "Dubai"];
   const [city, setCity] = useState("");
+  const [selected, setSelected] = useState("current");
   const getCurrentLocation = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       const lat = position.coords.latitude;
@@ -26,27 +27,32 @@ function App() {
     let response = await fetch(url);
     let data = await response.json();
     setWeatherInfo(data);
-    console.log(data);
   };
+
+  const handleCityChange = (city) => {
+    if (city === "current") {
+      setCity(null);
+      setSelected(city);
+    } else {
+      setCity(city);
+      setSelected(city);
+    }
+  };
+
   useEffect(() => {
     {
-      if (city === "current") {
-        getCurrentLocation();
-      } else {
-        getWeatherByCity();
-      }
+      !city ? getCurrentLocation() : getWeatherByCity();
     }
   }, [city]);
-  // useEffect(() => {
-  //   {
-  //     !city ? getCurrentLocation() : getWeatherByCity();
-  //   }
-  // }, [city]);
 
   return (
     <div className="main">
       <DashBoard weatherInfo={weatherInfo} />
-      <CityButton cities={cities} setCity={setCity} />
+      <CityButton
+        cities={cities}
+        handleCityChange={handleCityChange}
+        selected={selected}
+      />
     </div>
   );
 }

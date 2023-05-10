@@ -67,3 +67,6 @@ button {
 button:hover {
   background-color: rgb(247 195 1);
 }
+button.selected {
+  background-color: rgb(247 195 1);
+}
