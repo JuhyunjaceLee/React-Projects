@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+.nav_login {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.logo {
+  background-color: darkorange;
+  color: white;
+  margin: auto;
+  padding: 10px;
+}
+.menu_Lists {
+  color: darkgray;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  gap: 25px;
+  font-weight: 600;
+}
+.menu_Lists li:hover {
+  color: black;
+}
