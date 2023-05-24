@@ -7,16 +7,18 @@
       "price": 24900,
       "choice": true,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 1,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/c1/c1/c1c13e6b0a9fa6ef220c401d6d71eab33f79f8cc.jpg],origin[dam],category[men_trousers_joggers],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "Regular Fit 리넨 블렌드 팬츠",
-      "price": 49900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/f9/ef/f9ef5e40f198c2c472a28258546294498ce91fcc.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "스트레이트 레귤러 진",
+      "price": 39900,
       "choice": true,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 2,
@@ -25,16 +27,18 @@
       "price": 34900,
       "choice": false,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 3,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/82/3a/823afeca19d3cca206dffdd728cc89a6e43badde.jpg],origin[dam],category[MEN_TSHIRTSTANKS_POLO],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "릴랙스핏 홀니트 폴로셔츠",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/60/7d/607d4e4e8488855db328db28d86a1e91359c3dcd.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "슬리브리스 코튼 드레스",
       "price": 49900,
       "choice": false,
-      "new": true,
-      "size": ["S", "M", "L"]
+      "new": false,
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 4,
@@ -43,16 +47,18 @@
       "price": 34900,
       "choice": true,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 5,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/22/38/2238b559a73d60ab7766f064cffce80276e10e70.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "Regular Fit 재킷",
-      "price": 99900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/7b/ac/7bacb65ea4993d22bab740e1ba0009b77e332605.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "스퀘어넥 코튼 블라우스",
+      "price": 24900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 6,
@@ -61,16 +67,18 @@
       "price": 49900,
       "choice": true,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 7,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/5c/9e/5c9e2cea8bb17c43854e6e95516effa1c992e8d6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "Relaxed Fit 리넨 블렌드 셔츠",
-      "price": 34900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/7f/04/7f04bf9e0f65103f94bca7268bfc9ab7ed8d12d6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "워시드 데님 쇼츠",
+      "price": 29900,
       "choice": false,
-      "new": true,
-      "size": ["S", "M", "L"]
+      "new": false,
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 8,
@@ -79,16 +87,18 @@
       "price": 34900,
       "choice": true,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 9,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/23/74/23744d23f93f8522bacd4e6764ff164c14b71cfd.jpg],origin[dam],category[men_blazerssuits_blazers],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "슬림핏 재킷",
-      "price": 99900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/a7/d2/a7d2726b466b9a7dfb45589d3b028546b62f8da0.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "퍼프 슬리브 크링클 드레스",
+      "price": 29900,
       "choice": false,
-      "new": true,
-      "size": ["S", "M", "L"]
+      "new": false,
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 10,
@@ -97,16 +107,18 @@
       "price": 34900,
       "choice": true,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 11,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/f9/ef/f9ef5e40f198c2c472a28258546294498ce91fcc.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "스트레이트 레귤러 진",
-      "price": 39900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/c1/c1/c1c13e6b0a9fa6ef220c401d6d71eab33f79f8cc.jpg],origin[dam],category[men_trousers_joggers],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "Regular Fit 리넨 블렌드 팬츠",
+      "price": 49900,
       "choice": true,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 12,
@@ -115,16 +127,18 @@
       "price": 29900,
       "choice": true,
       "new": true,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 13,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/60/7d/607d4e4e8488855db328db28d86a1e91359c3dcd.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "슬리브리스 코튼 드레스",
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/82/3a/823afeca19d3cca206dffdd728cc89a6e43badde.jpg],origin[dam],category[MEN_TSHIRTSTANKS_POLO],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "릴랙스핏 홀니트 폴로셔츠",
       "price": 49900,
       "choice": false,
-      "new": false,
-      "size": ["S", "M", "L"]
+      "new": true,
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 14,
@@ -133,16 +147,18 @@
       "price": 39900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 15,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/7b/ac/7bacb65ea4993d22bab740e1ba0009b77e332605.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "스퀘어넥 코튼 블라우스",
-      "price": 24900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/22/38/2238b559a73d60ab7766f064cffce80276e10e70.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "Regular Fit 재킷",
+      "price": 99900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 16,
@@ -151,16 +167,18 @@
       "price": 39900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 17,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/7f/04/7f04bf9e0f65103f94bca7268bfc9ab7ed8d12d6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "워시드 데님 쇼츠",
-      "price": 29900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/5c/9e/5c9e2cea8bb17c43854e6e95516effa1c992e8d6.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "Relaxed Fit 리넨 블렌드 셔츠",
+      "price": 34900,
       "choice": false,
-      "new": false,
-      "size": ["S", "M", "L"]
+      "new": true,
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 18,
@@ -169,16 +187,18 @@
       "price": 29900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     },
     {
       "id": 19,
-      "img": "https://lp2.hm.com/hmgoepprod?set=source[/a7/d2/a7d2726b466b9a7dfb45589d3b028546b62f8da0.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
-      "title": "퍼프 슬리브 크링클 드레스",
-      "price": 29900,
+      "img": "https://lp2.hm.com/hmgoepprod?set=source[/23/74/23744d23f93f8522bacd4e6764ff164c14b71cfd.jpg],origin[dam],category[men_blazerssuits_blazers],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]",
+      "title": "슬림핏 재킷",
+      "price": 99900,
       "choice": false,
-      "new": false,
-      "size": ["S", "M", "L"]
+      "new": true,
+      "size": ["S", "M", "L"],
+      "gender": "MEN"
     },
     {
       "id": 20,
@@ -187,7 +207,8 @@
       "price": 29900,
       "choice": false,
       "new": false,
-      "size": ["S", "M", "L"]
+      "size": ["S", "M", "L"],
+      "gender": "WOMEN"
     }
   ]
 }

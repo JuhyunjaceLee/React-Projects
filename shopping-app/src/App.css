@@ -24,6 +24,17 @@ input {
   justify-content: center;
   gap: 20px;
 }
+.menu_Lists {
+  color: darkgray;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 25px;
+  font-weight: 600;
+}
+.menu_Lists li:hover {
+  color: black;
+}
 
 @media (max-width: 1200px) {
   .productCard_wrap {

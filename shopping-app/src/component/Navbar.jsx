@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 export default function Navbar({ log, setLog, auth, setAuth }) {
   const navigate = useNavigate();
-  const menuList = ["MEN", "WOMEN"];
   const logBtn = () => {
     navigate("/login");
     {
@@ -28,11 +27,6 @@ export default function Navbar({ log, setLog, auth, setAuth }) {
       <button className={styles.logo} onClick={goToHome}>
         JUHYUN`s Clothing Store
       </button>
-      <ul className={styles.menu_Lists}>
-        {menuList.map((list, idx) => (
-          <li key={idx}>{list}</li>
-        ))}
-      </ul>
     </div>
   );
 }

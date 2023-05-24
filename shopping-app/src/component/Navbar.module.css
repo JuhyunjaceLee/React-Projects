@@ -16,14 +16,3 @@
   margin: auto;
   padding: 10px;
 }
-.menu_Lists {
-  color: darkgray;
-  display: flex;
-  margin: auto;
-  padding: 10px;
-  gap: 25px;
-  font-weight: 600;
-}
-.menu_Lists li:hover {
-  color: black;
-}
