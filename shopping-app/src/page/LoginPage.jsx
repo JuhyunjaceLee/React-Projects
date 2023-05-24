@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./LoginPage.module.css";
 import { useNavigate } from "react-router-dom";
 
-export default function LoginPage({ setLog }) {
+export default function LoginPage({ setLog, auth, setAuth }) {
   const navigate = useNavigate();
   const goToLog = (e) => {
     e.preventDefault();
     navigate("/");
+    setAuth(true);
     setLog("로그아웃");
+    console.log(auth);
   };
   return (
     <form className={styles.login_form}>

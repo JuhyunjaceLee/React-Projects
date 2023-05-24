@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-export default function Navbar({ log, setLog }) {
+export default function Navbar({ log, setLog, auth, setAuth }) {
   const navigate = useNavigate();
   const menuList = ["MEN", "WOMEN"];
   const logBtn = () => {
@@ -11,6 +11,8 @@ export default function Navbar({ log, setLog }) {
     {
       if (log === "로그아웃") {
         setLog("로그인");
+        setAuth(false);
+        console.log(auth);
       }
     }
   };
