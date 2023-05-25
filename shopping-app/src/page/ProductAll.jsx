@@ -22,7 +22,6 @@ export default function ProductAll() {
   const filterItem = (e) => {
     const filterBtn = e.target.innerHTML;
     const filter = productsList.filter((item) => item.gender === filterBtn);
-    console.log(filter);
     setFilterList(filter);
   };
 

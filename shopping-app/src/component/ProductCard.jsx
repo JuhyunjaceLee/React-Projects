@@ -8,7 +8,6 @@ export default function ProductCard({ list }) {
   const navigate = useNavigate();
   const goToDetail = () => {
     navigate(`/product/${list.id}`);
-    console.log({ list });
   };
   return (
     <div className={styles.productCard_contents} onClick={goToDetail}>

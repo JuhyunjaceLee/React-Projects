@@ -9,7 +9,6 @@ export default function LoginPage({ setLog, auth, setAuth }) {
     navigate("/");
     setAuth(true);
     setLog("로그아웃");
-    console.log(auth);
   };
   return (
     <form className={styles.login_form}>
