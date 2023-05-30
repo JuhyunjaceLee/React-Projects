@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./LoginPage.module.css";
 import { useNavigate } from "react-router-dom";
 
-export default function LoginPage({ setLog, auth, setAuth }) {
+export default function LoginPage({ setLog, setAuth }) {
   const navigate = useNavigate();
   const goToLog = (e) => {
     e.preventDefault();

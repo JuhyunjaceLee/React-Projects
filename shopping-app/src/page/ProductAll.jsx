@@ -31,7 +31,7 @@ export default function ProductAll() {
 
   return (
     <div className="product_contents">
-      <SearchInput />
+      <SearchInput productsList={productsList} setFilterList={setFilterList} />
       <ul className="menu_Lists">
         <li onClick={showAllProducts}>ALL</li>
         {menuList.map((list, idx) => (
