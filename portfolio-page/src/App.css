@@ -1,3 +1,11 @@
+:root {
+  /* color */
+  --color-white: rgb(255, 255, 255);
+  --color-gray: rgb(124, 132, 136);
+  --color-darkgray: rgb(51, 54, 57);
+  --color-orange: rgb(255, 105, 0);
+  --color-black: rgb(0, 0, 0);
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +22,7 @@ a {
   color: inherit;
 }
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   font-family: "Poppins", sans-serif;
 }
