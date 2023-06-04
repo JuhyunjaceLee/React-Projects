@@ -14,13 +14,14 @@
   justify-content: center;
   margin: auto;
 }
-.home_main div {
+.home_main .home_eachBox {
   background-color: var(--color-darkgray);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 60px;
+  font-size: 1.5rem;
 }
 .mainbox1 {
   grid-template-columns: 60% 40%;
@@ -32,8 +33,12 @@
 .home_aboutBox_contents {
   display: flex;
   flex-direction: column;
+  font-size: 1.5rem;
 }
 .home_myName {
   color: var(--color-orange);
   font-weight: 600;
+}
+.home_frontend {
+  font-size: 1rem;
 }
