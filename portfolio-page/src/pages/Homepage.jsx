@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import styles from "./Homepage.module.css";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function Homepage() {
+  const [hoverActive, setHoverActive] = useState(false);
+  const handleMouseOver = (e) => {
+    setHoverActive(true);
+    console.log("mouseOver");
+  };
+  const handleMouseOut = () => {
+    setHoverActive(false);
+    console.log("mouseOut");
+  };
+
   return (
     <div>
       <Navbar />
       <div className={styles.home_contents}>
         <h1 className={styles.home_title}>FRONT-END DEVELOPER</h1>
         <main className={`${styles.home_main} ${styles.mainbox1}`}>
-          <div className={styles.home_eachBox}>
+          <div
+            className={
+              hoverActive
+                ? `${styles.home_eachBox}${styles.home_eachBoxActive}`
+                : `${styles.home_eachBox}`
+            }
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+          >
             <div className={styles.home_aboutBox_contents}>
               <p>안녕하세요!</p>
               <p>

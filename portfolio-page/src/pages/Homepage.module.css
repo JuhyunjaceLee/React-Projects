@@ -1,11 +1,12 @@
 .home_contents {
-  margin-top: 100px;
   padding: 0 30px;
 }
 .home_title {
   font-size: 5rem;
   text-align: center;
   text-shadow: 2px 2px 2px var(--color-orange);
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .home_main {
   display: grid;
@@ -23,12 +24,15 @@
   padding: 60px;
   font-size: 1.5rem;
 }
+.active {
+  background-color: var(--color-orange);
+}
 .mainbox1 {
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 40% 20%;
   margin-bottom: 10px;
 }
 .mainbox2 {
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 20% 40%;
 }
 .home_aboutBox_contents {
   display: flex;

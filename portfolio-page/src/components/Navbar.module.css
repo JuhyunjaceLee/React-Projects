@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  /* height: 80px; */
+  color: var(--color-gray);
+  font-weight: 600;
   background-color: var(--color-black);
   padding: 0 30px;
   display: flex;

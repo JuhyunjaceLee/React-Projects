@@ -14,11 +14,11 @@ export default function Navbar() {
         <p className={styles.navbar_logoTitle}>JUHYUN LEE</p>
       </div>
       <ul className={styles.navbar_lists}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/projects">PROJECTS</Link>
+        <Link to="/skills">SKILLS</Link>
+        <Link to="/contact">CONTACT</Link>
       </ul>
     </div>
   );
