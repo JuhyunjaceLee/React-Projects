@@ -5,10 +5,12 @@ import Aboutpage from "./pages/Aboutpage";
 import Projectpage from "./pages/Projectpage";
 import Skillspage from "./pages/Skillspage";
 import Contactpage from "./pages/Contactpage";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<Aboutpage />} />
