@@ -22,7 +22,7 @@
 .navbar_logoTitle {
   color: var(--color-orange);
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 900;
 }
 .navbar_lists {
   display: flex;

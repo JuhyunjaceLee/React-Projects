@@ -32,67 +32,103 @@
   font-weight: 500;
 }
 
-.education_contents {
-  margin-top: 20px;
+.about_contents {
+  margin-top: 50px;
+  margin-bottom: 300px;
   position: relative;
 }
-.education_title {
+.about_contents_title {
   margin-bottom: 30px;
 }
-.education_timeline {
+.timeline {
   width: 100%;
   height: 3px;
   background-color: var(--color-orange);
   position: absolute;
-  top: 130%;
+  top: 119%;
+  animation: moveline 3s linear forwards;
 }
-.education_textbox_up {
+
+@keyframes moveline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.timeline_arrow {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 110%;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--color-orange);
+  right: -14px;
+  animation: showarrow 3s linear forwards;
+}
+@keyframes showarrow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.textbox_contents {
   display: flex;
   justify-content: space-around;
-  position: relative;
 }
-.education_textbox_down {
+.textbox_wrap {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 70px;
+  flex-direction: column;
 }
-.education_textbox {
+.textbox {
   background-color: var(--color-orange);
   position: relative;
   border-radius: 4px;
   padding: 10px;
 }
-.education_circle_up {
+.textbox_down {
+  top: 168%;
+}
+.textbox_title {
+  text-decoration: underline;
+  margin-bottom: 7px;
+}
+.circle_up {
   position: absolute;
   width: 20px;
   height: 20px;
   background-color: var(--color-white);
   border-radius: 50%;
-  top: 115px;
+  z-index: 1;
+  top: 117px;
   left: 15px;
-  z-index: 10;
 }
-.education_arrow_down {
+.circle_down {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  bottom: 123px;
+  left: 15px;
+  z-index: 1;
+}
+.arrow_down {
   height: 0px;
   width: 0px;
   position: absolute;
-  top: 95px;
+  top: 97px;
   z-index: 1;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid var(--color-orange);
 }
-.education_circle_down {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: var(--color-white);
-  border-radius: 50%;
-  bottom: 120px;
-  left: 15px;
-  z-index: 10;
-}
-.education_arrow_up {
+.arrow_up {
   height: 0px;
   width: 0px;
   position: absolute;
@@ -101,4 +137,12 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid var(--color-orange);
+}
+.date_up {
+  bottom: -40%;
+  position: absolute;
+}
+.down_date {
+  top: 100%;
+  position: absolute;
 }
