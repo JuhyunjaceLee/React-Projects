@@ -9,30 +9,41 @@ export default function Projectpage() {
       imgSrc: "image/thumbnail/closet_thumbnail.png",
       name: "What`s In My Closet",
       type: "JS",
+      url: "https://chipper-macaron-9219aa.netlify.app/",
     },
     {
       imgSrc: "image/thumbnail/shoppingList_thumbnail.png",
       name: "Shopping List",
       type: "JS",
+      url: "https://aquamarine-sopapillas-2cdcaa.netlify.app/",
     },
     {
       imgSrc: "image/thumbnail/ploggingGame_thumbnail.png",
       name: "Plogging Game",
       type: "JS",
+      url: "https://luminous-gaufre-2e946f.netlify.app/",
     },
     {
       imgSrc: "image/thumbnail/myBox_thumbnail.png",
       name: "My Box",
       type: "VUE",
+      url: "https://stellular-granita-afbdbd.netlify.app/",
     },
     {
       imgSrc: "image/thumbnail/weatherApp_thumbnail.png",
       name: "Weather App",
       type: "REACT",
+      url: "https://luminous-gaufre-2e946f.netlify.app/",
     },
     {
       imgSrc: "image/thumbnail/shoppingApp_thumbnail.png",
       name: "Shopping App",
+      type: "REACT",
+      url: "https://luminous-gaufre-2e946f.netlify.app/",
+    },
+    {
+      imgSrc: "image/thumbnail/portfolio_thumbnail.png",
+      name: "Portfolio Page",
       type: "REACT",
     },
   ];
@@ -52,6 +63,10 @@ export default function Projectpage() {
     const filterBtn = e.target.innerHTML;
     const filter = allList.filter((list) => list.type === filterBtn);
     setFilterList(filter);
+  };
+
+  const goToProject = (list) => {
+    window.open(`${list.url}`, "_blank");
   };
 
   useEffect(() => {
@@ -78,7 +93,11 @@ export default function Projectpage() {
       </ul>
       <main className={styles.projects_contents}>
         {filterList.map((list, idx) => (
-          <div className={styles.projects_list} key={idx}>
+          <div
+            className={styles.projects_list}
+            key={idx}
+            onClick={() => goToProject(list)}
+          >
             <img
               className={styles.projects_list_img}
               src={list.imgSrc}

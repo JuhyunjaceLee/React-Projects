@@ -1,0 +1,9 @@
+.chart_contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.chart {
+  width: 300px;
+}

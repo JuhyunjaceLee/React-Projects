@@ -15,9 +15,13 @@
 .navbar_wrap {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .navbar_logoFaceImg {
   width: 70px;
+}
+.navbar_logoFaceImg:hover {
+  transform: rotate(45deg);
 }
 .navbar_logoTitle {
   color: var(--color-orange);
