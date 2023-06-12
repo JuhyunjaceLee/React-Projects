@@ -1,15 +1,18 @@
 .contact_contents {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: auto;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 30px;
+  display: flex;
+  /* display: inline-block; */
+  justify-content: center;
+  /* margin: auto; */
   margin-top: 30px;
-  padding: 0 250px;
+  /* padding: 0 250px; */
 }
 .contact_box {
   background-color: var(--color-orange);
   width: 350px;
-  margin: auto;
+  /* margin: auto; */
   padding: 30px;
   display: flex;
   flex-direction: column;

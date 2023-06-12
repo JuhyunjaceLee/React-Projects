@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-evenly;
+  padding: 0 150px;
 }
 .chart {
   width: 300px;

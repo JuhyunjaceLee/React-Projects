@@ -13,8 +13,10 @@
   align-items: center;
   padding: 60px;
   font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
 }
-.active {
+.home_main .home_eachBox:hover {
   background-color: var(--color-orange);
 }
 .mainbox1 {
@@ -35,4 +37,33 @@
 }
 .home_frontend {
   font-size: 1rem;
+}
+
+.home_eachBox_hoverBox {
+  position: absolute;
+  opacity: 0;
+}
+
+.home_main .home_eachBox:hover .home_box_contents {
+  opacity: 0;
+}
+.home_main .home_eachBox:hover .home_eachBox_hoverBox {
+  opacity: 1;
+}
+.home_abouBox_hoverBox {
+  font-size: 65px;
+  font-weight: 600;
+}
+.home_projectsBox_hoverBox {
+  font-size: 24px;
+}
+.home_skillsBox_hoverBox {
+  display: flex;
+  gap: 5px;
+  font-size: 36px;
+}
+.home_contactBox_hoverBox {
+  display: flex;
+  gap: 15px;
+  font-size: 60px;
 }

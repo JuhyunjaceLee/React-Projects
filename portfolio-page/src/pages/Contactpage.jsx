@@ -1,9 +1,8 @@
 import React from "react";
 import commonstyles from "./Common.module.css";
 import styles from "./Contactpage.module.css";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillTelephoneFill, BsGithub } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-import { BsGithub } from "react-icons/bs";
 import { SlNote } from "react-icons/sl";
 
 export default function Contactpage() {
@@ -21,6 +20,8 @@ export default function Contactpage() {
           <h3>EMAIL ADRESS</h3>
           <p>heyjace777@gmail.com</p>
         </div>
+      </div>
+      <div className={styles.contact_contents}>
         <div
           className={styles.contact_box}
           onClick={() =>

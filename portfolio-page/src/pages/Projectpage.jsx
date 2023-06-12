@@ -10,48 +10,53 @@ export default function Projectpage() {
       name: "What`s In My Closet",
       type: "JS",
       url: "https://chipper-macaron-9219aa.netlify.app/",
+      code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/what%60sInMyCloset",
     },
     {
       imgSrc: "image/thumbnail/shoppingList_thumbnail.png",
       name: "Shopping List",
       type: "JS",
       url: "https://aquamarine-sopapillas-2cdcaa.netlify.app/",
+      code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/shoppingList",
     },
     {
       imgSrc: "image/thumbnail/ploggingGame_thumbnail.png",
       name: "Plogging Game",
       type: "JS",
       url: "https://luminous-gaufre-2e946f.netlify.app/",
+      code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/ploggingGame",
     },
     {
       imgSrc: "image/thumbnail/myBox_thumbnail.png",
       name: "My Box",
       type: "VUE",
       url: "https://stellular-granita-afbdbd.netlify.app/",
+      code: "https://github.com/JuhyunjaceLee/mybox/tree/master/mybox_vue",
     },
     {
       imgSrc: "image/thumbnail/weatherApp_thumbnail.png",
       name: "Weather App",
       type: "REACT",
-      url: "https://luminous-gaufre-2e946f.netlify.app/",
+      url: "",
+      code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/weather-app",
     },
     {
       imgSrc: "image/thumbnail/shoppingApp_thumbnail.png",
       name: "Shopping App",
       type: "REACT",
-      url: "https://luminous-gaufre-2e946f.netlify.app/",
+      url: "",
+      code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/shopping-app",
     },
     {
       imgSrc: "image/thumbnail/portfolio_thumbnail.png",
       name: "Portfolio Page",
       type: "REACT",
+      code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-page",
     },
   ];
-  const [allList, setAllList] = useState([]);
   const [filterList, setFilterList] = useState([]);
 
   const getLists = () => {
-    setAllList(lists);
     setFilterList(lists);
   };
 
@@ -61,12 +66,16 @@ export default function Projectpage() {
 
   const filterListsHandler = (e) => {
     const filterBtn = e.target.innerHTML;
-    const filter = allList.filter((list) => list.type === filterBtn);
+    const filter = lists.filter((list) => list.type === filterBtn);
     setFilterList(filter);
   };
 
   const goToProject = (list) => {
     window.open(`${list.url}`, "_blank");
+  };
+
+  const goToProjectCode = (list) => {
+    window.open(`${list.code}`, "_blank");
   };
 
   useEffect(() => {
@@ -104,7 +113,16 @@ export default function Projectpage() {
               alt={list.name}
             />
             <h3>{list.name}</h3>
-            <p> 바로가기 CLICK!</p>
+            <p className={styles.projects_list_page}>
+              {" "}
+              프로젝트 페이지 바로가기
+            </p>
+            <h3
+              className={styles.projects_list_code}
+              onClick={() => goToProjectCode(list)}
+            >
+              소스코드 보기
+            </h3>
           </div>
         ))}
       </main>

@@ -117,6 +117,27 @@ export default function Skillspage() {
           labelStyle={{ ...defaultLableStyle }}
           labelPosition={30}
         />
+        <PieChart
+          className={styles.chart}
+          data={[
+            {
+              title: "GIT",
+              value: 60,
+              percentage: 60,
+              color: "#6355a3",
+            },
+          ]}
+          reveal={60}
+          background="#454646"
+          lengthAngle={360}
+          animate
+          animationDuration={1000}
+          lineWidth={30}
+          rounded
+          label={({ dataEntry }) => dataEntry.title}
+          labelStyle={{ ...defaultLableStyle }}
+          labelPosition={20}
+        />
       </div>
     </div>
   );
