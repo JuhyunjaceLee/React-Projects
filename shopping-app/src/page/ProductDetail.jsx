@@ -8,7 +8,7 @@ export default function ProductDetail() {
   const [item, setItem] = useState(null);
   const param = useParams();
   const getProductDetail = async () => {
-    let url = `http://localhost:5000/products/${param.id}`;
+    let url = `https://my-json-server.typicode.com/JuhyunjaceLee/React-Projects/shopping-app/products/${param.id}`;
     let response = await fetch(url);
     let data = await response.json();
     setItem(data);

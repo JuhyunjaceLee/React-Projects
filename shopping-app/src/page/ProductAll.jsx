@@ -8,7 +8,9 @@ export default function ProductAll() {
   const menuList = ["MEN", "WOMEN"];
 
   const getProducts = async () => {
-    let url = `http://localhost:5000/products`;
+    // let url = `http://localhost:5000/products`;
+    let url =
+      "https://my-json-server.typicode.com/JuhyunjaceLee/React-Projects/shopping-app";
     let response = await fetch(url);
     let data = await response.json();
     setProductsList(data);
