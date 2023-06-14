@@ -3,7 +3,7 @@
 ## Thumbnail
 <img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3134afa2-d76f-431a-9688-33d4ec89e268" width="500"/>
 
-## 프로젝트 URL - 프로젝트 바로가기<a href="">CLICK</a>
+## 프로젝트 URL - 프로젝트 바로가기<a href="https://react-projects-weatherapp.netlify.app/">CLICK</a>
 
 ## 프로젝트 MEMO URL - <a href="https://www.notion.so/Weather-App-efa034f6f65046fb8f3040fe5bfa2138">CLICK</a>
 
