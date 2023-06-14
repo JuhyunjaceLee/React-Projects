@@ -1,7 +1,7 @@
 # Weather App
 
 ## Thumbnail
-<img src="" width="500"/>
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3134afa2-d76f-431a-9688-33d4ec89e268" width="500"/>
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="">CLICK</a>
 
