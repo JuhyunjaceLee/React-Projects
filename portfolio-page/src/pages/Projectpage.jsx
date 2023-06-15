@@ -37,15 +37,15 @@ export default function Projectpage() {
       imgSrc: "image/thumbnail/weatherApp_thumbnail.png",
       name: "Weather App",
       type: "REACT",
-      url: "",
+      url: "https://react-projects-weatherapp.netlify.app/",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/weather-app",
     },
     {
       imgSrc: "image/thumbnail/shoppingApp_thumbnail.png",
       name: "Shopping App",
       type: "REACT",
-      url: "",
-      code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/shopping-app",
+      url: "https://react-projects-shoppingapp.netlify.app",
+      code: "https://github.com/JuhyunjaceLee/React-projects-shoppingApp",
     },
     {
       imgSrc: "image/thumbnail/portfolio_thumbnail.png",
@@ -102,21 +102,20 @@ export default function Projectpage() {
       </ul>
       <main className={styles.projects_contents}>
         {filterList.map((list, idx) => (
-          <div
-            className={styles.projects_list}
-            key={idx}
-            onClick={() => goToProject(list)}
-          >
-            <img
-              className={styles.projects_list_img}
-              src={list.imgSrc}
-              alt={list.name}
-            />
-            <h3>{list.name}</h3>
-            <p className={styles.projects_list_page}>
-              {" "}
-              프로젝트 페이지 바로가기
-            </p>
+          <div key={idx} className={styles.projects_list}>
+            <div onClick={() => goToProject(list)}>
+              <img
+                className={styles.projects_list_img}
+                src={list.imgSrc}
+                alt={list.name}
+              />
+              <h3>{list.name}</h3>
+              <p className={styles.projects_list_page}>
+                {" "}
+                프로젝트 페이지 바로가기
+              </p>
+            </div>
+
             <h3
               className={styles.projects_list_code}
               onClick={() => goToProjectCode(list)}

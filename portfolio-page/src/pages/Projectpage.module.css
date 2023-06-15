@@ -20,10 +20,11 @@
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .projects_list {
   margin: 20px;
+  cursor: pointer;
 }
 .projects_list:hover {
   transform: scale(1.1);

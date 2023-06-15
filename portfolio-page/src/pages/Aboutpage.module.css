@@ -47,6 +47,7 @@
   position: absolute;
   top: 119%;
   animation: moveline 3s linear forwards;
+  animation-delay: 2s;
 }
 
 @keyframes moveline {
@@ -68,6 +69,7 @@
   border-left: 15px solid var(--color-orange);
   right: -14px;
   animation: showarrow 3s linear forwards;
+  animation-delay: 2s;
 }
 @keyframes showarrow {
   0% {
