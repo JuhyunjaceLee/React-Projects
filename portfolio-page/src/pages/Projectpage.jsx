@@ -51,6 +51,7 @@ export default function Projectpage() {
       imgSrc: "image/thumbnail/portfolio_thumbnail.png",
       name: "Portfolio Page",
       type: "REACT",
+      url: "https://react-projects-portfoliopage.netlify.app/",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-page",
     },
   ];

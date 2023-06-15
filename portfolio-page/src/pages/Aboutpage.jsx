@@ -111,7 +111,7 @@ export default function Aboutpage() {
                 <div className={styles.circle_up}></div>
                 <div className={styles.arrow_down}></div>
               </div>
-              <p className={styles.date_up}>2022.02 - 2022.03</p>
+              <p className={styles.date_up}>2016.05 - 2017.06</p>
             </div>
           </div>
         </div>
