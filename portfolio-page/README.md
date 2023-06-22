@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Portfolio Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Thumbnail
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3f3930fe-10c2-423c-b4dd-5338461a5d72" width="500"/>
 
-## Available Scripts
+## 프로젝트 URL - 프로젝트 바로가기<a href="https://react-projects-portfoliopage.netlify.app/">CLICK</a>
 
-In the project directory, you can run:
+## 프로젝트 MEMO URL - <a href="https://www.notion.so/Portfolio-page-5916f61c79c14f57800283b7d3ecd062">CLICK</a>
 
-### `npm start`
+## 제작기간
+2023년 06월 01일 - 2023년 06월 15일
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 상세소개
+* ### 목적
+#### - React Hooks 활용해보기
+#### - Components로 나눠서 props 활용해보기
+#### - Route 활용해보기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* ### SKILLS
+<div>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=flat&logo=JAVASCRIPT&logoColor=black" />
+  <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat&logo=REACT&logoColor=black" />
+</div>
 
-### `npm test`
+* ### 활용한 React 문법
+  - useState
+  - useEffect
+  - components와 props
+  - Routes, Route, Navigate, useParams, useNavigate
+  - CSS Module
+  - React Icon
+  - pieChart 라이브러리
+  
+* ### 활용한 Javascript 문법
+  - async 함와 await, fetch api
+  - 조건부 삼항연산자( = ? : )
+  - Array.map() method
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* ### 구현한 기능
+  - hompage main 화면 박스 별로 hover 했을 때, 배경색상이 바뀌며 바뀌는 화면이 다르고 클릭하면 해당 페이지로 이동한다.
+  - Navbar의 경우, 이름을 클릭하면 home화면으로 돌아가고 글자를 클릭하면 해당 페이지로 이동한다.
+  - AboutPage는 2초 후, timeline animaition이 시작한다.
+  - ProjectsPage에서는 해당 프로젝트의 소스코드와 프로젝트로 바로 갈 수 있는 Link가 연결되어있다.
+  - projects들을 type별로 sort할 수 있는 버튼이 있다.
+  - PieChart라이브러리를 이용하여 skills를 원형그래프로 구현했다.
+  - contact페이지는 github주소와 notion페이지로 갈 수 있는 Link가 연결되어있다.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 개선할 점
+* 버튼에 active 상태를 주고, 클릭하는 버튼에 상태를 변경한다.
