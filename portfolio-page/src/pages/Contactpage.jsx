@@ -36,7 +36,7 @@ export default function Contactpage() {
           className={styles.contact_box}
           onClick={() =>
             window.open(
-              "https://www.notion.so/Projects-fa915cc8c4ad466081fee41a0dbbd18c",
+              "https://desert-edam-bea.notion.site/Front-end-6777386ece574079a62942436de54cd0?pvs=4",
               "_blank"
             )
           }
