@@ -1,3 +1,31 @@
+.address_wrap {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  /* margin-left: 257px; */
+  margin-bottom: 50px;
+}
+.addressBox {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--color-orange);
+  cursor: pointer;
+}
+.addressBox:hover {
+  transform: scale(1.1);
+}
+.address_title {
+  font-size: 24px;
+  font-weight: 900;
+}
+.address_click {
+  color: var(--color-white);
+  font-weight: 700;
+}
 .home_main {
   display: grid;
   width: 90vw;

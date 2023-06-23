@@ -17,6 +17,29 @@ export default function Homepage() {
   return (
     <div className={commonstyles.contents}>
       <h1 className={commonstyles.contents_title}>FRONT-END DEVELOPER</h1>
+      <div className={styles.address_wrap}>
+        <div
+          className={styles.addressBox}
+          onClick={() => {
+            window.open("https://github.com/JuhyunjaceLee", "_blank");
+          }}
+        >
+          <p className={styles.address_title}>GITHUB ADRESS</p>
+          <p className={styles.address_click}>CLICK!</p>
+        </div>
+        <div
+          className={styles.addressBox}
+          onClick={() =>
+            window.open(
+              "https://desert-edam-bea.notion.site/Front-end-6777386ece574079a62942436de54cd0?pvs=4",
+              "_blank"
+            )
+          }
+        >
+          <p className={styles.address_title}>NOTION ADRESS</p>
+          <p className={styles.address_click}>CLICK!</p>
+        </div>
+      </div>
       <main className={`${styles.home_main} ${styles.mainbox1}`}>
         <div
           className={styles.home_eachBox}
