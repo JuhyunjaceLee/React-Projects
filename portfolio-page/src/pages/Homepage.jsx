@@ -24,8 +24,11 @@ export default function Homepage() {
             window.open("https://github.com/JuhyunjaceLee", "_blank");
           }}
         >
-          <p className={styles.address_title}>GITHUB ADRESS</p>
-          <p className={styles.address_click}>CLICK!</p>
+          <div className={styles.address_btn_wrap}>
+            <p className={styles.address_title}>GITHUB</p>
+            <BsGithub className={styles.address_icon} />
+          </div>
+          {/* <p className={styles.address_click}>CLICK!</p> */}
         </div>
         <div
           className={styles.addressBox}
@@ -36,10 +39,14 @@ export default function Homepage() {
             )
           }
         >
-          <p className={styles.address_title}>NOTION ADRESS</p>
-          <p className={styles.address_click}>CLICK!</p>
+          <div className={styles.address_btn_wrap}>
+            <p className={styles.address_title}>NOTION</p>
+            <SlNote className={styles.address_icon} />
+          </div>
+          {/* <p className={styles.address_click}>CLICK!</p> */}
         </div>
       </div>
+
       <main className={`${styles.home_main} ${styles.mainbox1}`}>
         <div
           className={styles.home_eachBox}

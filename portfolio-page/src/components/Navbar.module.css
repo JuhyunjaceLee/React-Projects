@@ -18,14 +18,14 @@
   cursor: pointer;
 }
 .navbar_logoFaceImg {
-  width: 70px;
+  width: 50px;
 }
 .navbar_logoFaceImg:hover {
   transform: rotate(45deg);
 }
 .navbar_logoTitle {
   color: var(--color-orange);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 900;
 }
 .navbar_lists {
