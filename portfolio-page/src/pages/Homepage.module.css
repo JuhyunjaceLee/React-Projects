@@ -17,6 +17,7 @@
 }
 .addressBox:hover {
   transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 .address_btn_wrap {
   display: flex;
@@ -51,6 +52,7 @@
 }
 .home_main .home_eachBox:hover {
   background-color: var(--color-orange);
+  transition: all 0.5s ease-in-out;
 }
 .mainbox1 {
   grid-template-columns: 40% 25%;
@@ -79,9 +81,11 @@
 
 .home_main .home_eachBox:hover .home_box_contents {
   opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 .home_main .home_eachBox:hover .home_eachBox_hoverBox {
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 .home_abouBox_hoverBox {
   font-size: 65px;

@@ -31,8 +31,16 @@ export default function Skillspage() {
       name: "GIT",
     },
     {
+      imgSrc: "image/logo/github_logo.png",
+      name: "GITHUB",
+    },
+    {
       imgSrc: "image/logo/firebase_logo.png",
       name: "FIREBASE",
+    },
+    {
+      imgSrc: "image/logo/netlify_logo.png",
+      name: "NETLIFY",
     },
   ];
   return (
