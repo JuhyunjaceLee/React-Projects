@@ -27,6 +27,10 @@ export default function Skillspage() {
       name: "REACT.JS",
     },
     {
+      imgSrc: "image/logo/bootstrap_logo.png",
+      name: "BOOTSTRAP",
+    },
+    {
       imgSrc: "image/logo/git_logo.png",
       name: "GIT",
     },
@@ -43,11 +47,27 @@ export default function Skillspage() {
       name: "NETLIFY",
     },
   ];
+  const nextLists = [
+    {
+      imgSrc: "image/logo/redux_logo.png",
+      name: "REDUX",
+    },
+    {
+      imgSrc: "image/logo/mysql_logo.png",
+      name: "MYSQL",
+    },
+  ];
   return (
     <div className={commonstyles.contents}>
       <h1 className={commonstyles.contents_title}>SKILLS</h1>
       <main className={styles.main}>
         {lists.map((list, idx) => (
+          <Skill list={list} key={idx} />
+        ))}
+      </main>
+      <p className={styles.next_title}>What`s the NEXT?</p>
+      <main className={styles.main}>
+        {nextLists.map((list, idx) => (
           <Skill list={list} key={idx} />
         ))}
       </main>
