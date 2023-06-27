@@ -159,7 +159,7 @@ export default function Aboutpage() {
                 <h3 className={styles.about_detail_title}>
                   주식회사 신영솔루션
                 </h3>
-                <p>2020.10 - 2021. 12</p>
+                <p>2020.10 - 2022.01</p>
               </div>
               <h4 className={styles.about_detail_subtitle}>
                 주임 / 시스템 사업부 / 회계팀
