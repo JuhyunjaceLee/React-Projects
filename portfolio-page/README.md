@@ -3,7 +3,7 @@
 ## Thumbnail
 <img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3f3930fe-10c2-423c-b4dd-5338461a5d72" width="500"/>
 
-## 프로젝트 URL - 프로젝트 바로가기<a href="https://react-projects-portfoliopage.netlify.app/">CLICK</a>
+## 프로젝트 URL - 프로젝트 바로가기<a href="https://i-am-leejuhyun.netlify.app">CLICK</a>
 
 ## 프로젝트 MEMO URL - <a href="https://www.notion.so/Portfolio-page-5916f61c79c14f57800283b7d3ecd062">CLICK</a>
 
