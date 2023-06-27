@@ -53,6 +53,10 @@ export default function Skillspage() {
       name: "REDUX",
     },
     {
+      imgSrc: "image/logo/typescript_logo.png",
+      name: "TYPESCRIPT",
+    },
+    {
       imgSrc: "image/logo/mysql_logo.png",
       name: "MYSQL",
     },
