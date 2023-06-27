@@ -27,6 +27,10 @@ export default function Skillspage() {
       name: "REACT.JS",
     },
     {
+      imgSrc: "image/logo/jquery_logo.png",
+      name: "jQUERY",
+    },
+    {
       imgSrc: "image/logo/bootstrap_logo.png",
       name: "BOOTSTRAP",
     },
