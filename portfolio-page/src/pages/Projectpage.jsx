@@ -3,7 +3,7 @@ import commonstyles from "./Common.module.css";
 import styles from "./Projectpage.module.css";
 
 export default function Projectpage() {
-  const buttons = ["JS", "VUE", "REACT"];
+  const buttons = ["JS", "VUE", "REACT", "TEAM"];
   const lists = [
     {
       imgSrc: "image/thumbnail/closet_thumbnail.png",
@@ -53,6 +53,13 @@ export default function Projectpage() {
       type: "REACT",
       url: "https://i-am-leejuhyun.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-page",
+    },
+    {
+      imgSrc: "image/thumbnail/filtercafe_thumbnail.png",
+      name: "FILTER-CAFE",
+      type: "TEAM",
+      url: "#",
+      code: "https://github.com/JuhyunjaceLee/cafe-for-study",
     },
   ];
   const [filterList, setFilterList] = useState([]);
@@ -112,7 +119,6 @@ export default function Projectpage() {
               />
               <h3>{list.name}</h3>
               <p className={styles.projects_list_page}>
-                {" "}
                 프로젝트 페이지 바로가기
               </p>
             </div>
