@@ -72,7 +72,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
   ];
   const [filterList, setFilterList] = useState([]);
 
-  let [btnActive, setBtnActive] = useState("");
+  let [btnActive, setBtnActive] = useState(0);
 
   const getLists = () => {
     setFilterList(lists);
@@ -110,7 +110,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       <ul className={styles.projects_btn_wrap}>
         {buttons.map((btn, idx) => (
           <li
-            className={"projects_btn" + (idx == btnActive ? " active" : "")}
+            className={"projects_btn" + (idx === btnActive ? " active" : "")}
             key={idx}
             value={idx}
             onClick={filterListsHandler}
