@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   color: var(--color-gray);
   font-weight: 600;
   background-color: var(--color-black);
@@ -33,6 +33,6 @@
   align-items: center;
   gap: 20px;
 }
-.navbar_lists a:hover {
+.navbar_lists li:hover {
   color: var(--color-orange);
 }

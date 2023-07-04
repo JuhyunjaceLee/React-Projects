@@ -11,6 +11,7 @@ export default function Projectpage() {
       type: "JS",
       url: "https://whats-in-my-closet.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/what%60sInMyCloset",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/shoppingList_thumbnail.png",
@@ -18,6 +19,7 @@ export default function Projectpage() {
       type: "JS",
       url: "https://to-buy-lists.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/shoppingList",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/ploggingGame_thumbnail.png",
@@ -25,6 +27,7 @@ export default function Projectpage() {
       type: "JS",
       url: "https://save-turtles-game.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/ploggingGame",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/myBox_thumbnail.png",
@@ -32,6 +35,7 @@ export default function Projectpage() {
       type: "VUE",
       url: "https://stellular-granita-afbdbd.netlify.app/",
       code: "https://github.com/JuhyunjaceLee/mybox/tree/master/mybox_vue",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/weatherApp_thumbnail.png",
@@ -39,6 +43,7 @@ export default function Projectpage() {
       type: "REACT",
       url: "https://now-temperature.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/weather-app",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/shoppingApp_thumbnail.png",
@@ -46,6 +51,7 @@ export default function Projectpage() {
       type: "REACT",
       url: "https://clothing-store-page.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-projects-shoppingApp",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/portfolio_thumbnail.png",
@@ -53,6 +59,7 @@ export default function Projectpage() {
       type: "REACT",
       url: "https://i-am-leejuhyun.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-page",
+      state: "done",
     },
     {
       imgSrc: "image/thumbnail/filtercafe_thumbnail.png",
@@ -60,6 +67,7 @@ export default function Projectpage() {
       type: "TEAM",
       url: "#",
       code: "https://github.com/JuhyunjaceLee/cafe-for-study",
+      state: "ing",
     },
   ];
   const [filterList, setFilterList] = useState([]);
@@ -75,17 +83,11 @@ export default function Projectpage() {
     const filterBtn = target.innerHTML;
     if (filterBtn === "ALL") {
       getLists();
-      setBtnActive(() => {
-        return target.value;
-      });
-      console.log(btnActive);
+      setBtnActive(() => target.value);
     } else {
       const filter = lists.filter((list) => list.type === filterBtn);
       setFilterList(filter);
-      setBtnActive(() => {
-        return target.value;
-      });
-      console.log(btnActive);
+      setBtnActive(() => target.value);
     }
   };
 
@@ -128,7 +130,9 @@ export default function Projectpage() {
               />
               <h3>{list.name}</h3>
               <p className={styles.projects_list_page}>
-                프로젝트 페이지 바로가기
+                {list.state === "ing"
+                  ? "진행 중입니다."
+                  : "프로젝트 페이지 바로가기"}
               </p>
             </div>
 

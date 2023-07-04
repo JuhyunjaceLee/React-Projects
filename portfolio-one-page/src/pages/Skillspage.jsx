@@ -1,10 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import commonstyles from "./Common.module.css";
 import styles from "./Skillspage.module.css";
 import Skill from "../components/Skill";
-// import { PieChart } from "react-minimal-pie-chart";
 
-export default function Skillspage() {
+const Skillspage = forwardRef(({ props }, ref) => {
   const lists = [
     {
       imgSrc: "image/logo/html5_logo.png",
@@ -66,7 +65,7 @@ export default function Skillspage() {
     },
   ];
   return (
-    <div className={commonstyles.contents}>
+    <div className={commonstyles.contents} ref={ref}>
       <h1 className={commonstyles.contents_title}>SKILLS</h1>
       <main className={styles.main}>
         {lists.map((list, idx) => (
@@ -81,4 +80,6 @@ export default function Skillspage() {
       </main>
     </div>
   );
-}
+});
+
+export default Skillspage;

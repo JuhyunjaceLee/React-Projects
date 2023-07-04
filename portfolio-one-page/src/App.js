@@ -5,15 +5,31 @@ import Projectpage from "./pages/Projectpage";
 import Skillspage from "./pages/Skillspage";
 import Contactpage from "./pages/Contactpage";
 import Navbar from "./components/Navbar";
+import { useRef } from "react";
 
 function App() {
+  const aboutSection = useRef(null);
+  const skillSection = useRef(null);
+  const scrollToSection = (elementRef) => {
+    if (elementRef.current !== null) {
+      const offset = elementRef.current.offsetTop;
+      window.scrollTo({
+        top: offset - 100,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div>
-      <Navbar />
+      <Navbar
+        aboutSection={aboutSection}
+        skillSection={skillSection}
+        scrollToSection={scrollToSection}
+      />
       <Homepage />
-      <Aboutpage />
+      <Aboutpage ref={aboutSection} />
       <Projectpage />
-      <Skillspage />
+      <Skillspage ref={skillSection} />
       <Contactpage />
     </div>
   );

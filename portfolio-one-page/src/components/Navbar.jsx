@@ -1,15 +1,44 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-// import { useNavigate } from "react-router-dom";
 
-export default function Navbar() {
-  // const navigate = useNavigate();
-  // const goToHome = () => {
-  //   navigate("/");
+export default function Navbar({
+  aboutSection,
+  skillSection,
+  scrollToSection,
+}) {
+  const scrollToHome = () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  // const scrollToAbout = () => {
+  //   window.scroll({
+  //     top: 500,
+  //     behavior: "smooth",
+  //   });
+  // };
+  // const scrollToProject = () => {
+  //   window.scroll({
+  //     top: 2170,
+  //     behavior: "smooth",
+  //   });
+  // };
+  // const scrollToSkills = () => {
+  //   window.scroll({
+  //     top: 3550,
+  //     behavior: "smooth",
+  //   });
+  // };
+  // const scrollToContact = () => {
+  //   window.scroll({
+  //     top: 5040,
+  //     behavior: "smooth",
+  //   });
   // };
   return (
     <div className={styles.navbar}>
+      {/* <div className={styles.navbar_wrap} onClick={scrollToHome}> */}
       <div className={styles.navbar_wrap}>
         <img
           className={styles.navbar_logoFaceImg}
@@ -19,16 +48,16 @@ export default function Navbar() {
         <p className={styles.navbar_logoTitle}>JUHYUN LEE</p>
       </div>
       <ul className={styles.navbar_lists}>
-        {/* <Link to="/">HOME</Link>
-        <Link to="/about">ABOUT</Link>
-        <Link to="/projects">PROJECTS</Link>
-        <Link to="/skills">SKILLS</Link>
-        <Link to="/contact">CONTACT</Link> */}
-        <li>HOME</li>
-        <li>HOME</li>
-        <li>HOME</li>
-        <li>HOME</li>
-        <li>HOME</li>
+        <li onClick={scrollToHome}>HOME</li>
+        <li onClick={() => scrollToSection(aboutSection)}>ABOUT</li>
+        <li>PROJECTS</li>
+        <li onClick={() => scrollToSection(skillSection)}>SKILLS</li>
+        <li>CONTACT</li>
+        {/* <li onClick={scrollToHome}>HOME</li>
+        <li onClick={scrollToAbout}>ABOUT</li>
+        <li onClick={scrollToProject}>PROJECTS</li>
+        <li onClick={scrollToSkills}>SKILLS</li>
+        <li onClick={scrollToContact}>CONTACT</li> */}
       </ul>
     </div>
   );

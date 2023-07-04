@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Aboutpage.module.css";
 import commonstyles from "./Common.module.css";
 
-export default function Aboutpage() {
+const Aboutpage = forwardRef(({ props }, ref) => {
   return (
-    <div className={commonstyles.contents}>
+    <div className={commonstyles.contents} ref={ref}>
       <h1 className={commonstyles.contents_title}>ABOUT ME</h1>
       <main className={styles.about_main}>
         <div className={styles.avartar_contents}>
@@ -246,4 +246,6 @@ export default function Aboutpage() {
       </main>
     </div>
   );
-}
+});
+
+export default Aboutpage;
