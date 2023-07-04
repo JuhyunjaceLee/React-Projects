@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Homepage.module.css";
 import commonstyles from "./Common.module.css";
 import { BsGithub } from "react-icons/bs";
-import { SlNote } from "react-icons/sl";
+import { SiNotion } from "react-icons/si";
 import ScrollToTop from "../components/ScrollToTop";
 
 export default function Homepage() {
@@ -52,7 +52,7 @@ export default function Homepage() {
         >
           <div className={styles.address_btn_wrap}>
             <p className={styles.address_title}>NOTION</p>
-            <SlNote className={styles.address_icon} />
+            <SiNotion className={styles.address_icon} />
           </div>
         </div>
       </div>
