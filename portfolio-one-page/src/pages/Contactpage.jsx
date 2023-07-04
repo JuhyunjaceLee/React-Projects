@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import commonstyles from "./Common.module.css";
 import styles from "./Contactpage.module.css";
 import { BsFillTelephoneFill, BsGithub } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 import { SlNote } from "react-icons/sl";
 
-export default function Contactpage() {
+const Contactpage = forwardRef(({ props }, ref) => {
   return (
-    <div className={commonstyles.contents}>
+    <div className={commonstyles.contents} ref={ref}>
       <h1 className={commonstyles.contents_title}>CONTACT</h1>
       <div className={styles.contact_contents}>
         <div className={styles.contact_box}>
@@ -48,4 +48,6 @@ export default function Contactpage() {
       </div>
     </div>
   );
-}
+});
+
+export default Contactpage;

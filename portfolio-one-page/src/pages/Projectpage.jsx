@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import commonstyles from "./Common.module.css";
 import styles from "./Projectpage.module.css";
 
-export default function Projectpage() {
+const Projectpage = forwardRef(({ props }, ref) => {
   const buttons = ["ALL", "JS", "VUE", "REACT", "TEAM"];
   const lists = [
     {
@@ -104,7 +104,7 @@ export default function Projectpage() {
   }, []);
 
   return (
-    <div className={commonstyles.contents}>
+    <div className={commonstyles.contents} ref={ref}>
       <h1 className={commonstyles.contents_title}>PROJECTS</h1>
       <h2 className={styles.projects_title}>My projects</h2>
       <ul className={styles.projects_btn_wrap}>
@@ -147,4 +147,6 @@ export default function Projectpage() {
       </main>
     </div>
   );
-}
+});
+
+export default Projectpage;

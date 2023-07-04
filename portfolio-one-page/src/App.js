@@ -9,7 +9,9 @@ import { useRef } from "react";
 
 function App() {
   const aboutSection = useRef(null);
+  const projectSection = useRef(null);
   const skillSection = useRef(null);
+  const contactSection = useRef(null);
   const scrollToSection = (elementRef) => {
     if (elementRef.current !== null) {
       const offset = elementRef.current.offsetTop;
@@ -22,15 +24,17 @@ function App() {
   return (
     <div>
       <Navbar
-        aboutSection={aboutSection}
-        skillSection={skillSection}
         scrollToSection={scrollToSection}
+        aboutSection={aboutSection}
+        projectSection={projectSection}
+        skillSection={skillSection}
+        contactSection={contactSection}
       />
       <Homepage />
       <Aboutpage ref={aboutSection} />
-      <Projectpage />
+      <Projectpage ref={projectSection} />
       <Skillspage ref={skillSection} />
-      <Contactpage />
+      <Contactpage ref={contactSection} />
     </div>
   );
 }
