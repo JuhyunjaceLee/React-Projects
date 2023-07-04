@@ -7,18 +7,6 @@
   justify-content: center;
   gap: 20px;
 }
-.projects_btn {
-  background-color: var(--color-orange);
-  font-weight: 900;
-  padding: 10px;
-  border-radius: 5px;
-}
-.projects_btn .active {
-  border-bottom: 3px solid white;
-}
-.projects_btn:hover {
-  transform: scale(1.1);
-}
 .projects_contents {
   margin-top: 10px;
   display: grid;

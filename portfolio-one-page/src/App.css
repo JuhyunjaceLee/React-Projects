@@ -29,3 +29,17 @@ body {
   /* font-family: "Poppins", sans-serif; */
   font-family: "Red Hat Display", sans-serif;
 }
+
+/* projectpage-style */
+.projects_btn {
+  background-color: var(--color-orange);
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 5px;
+}
+.projects_btn.active {
+  border-bottom: 3px solid white;
+}
+.projects_btn:hover {
+  transform: scale(1.1);
+}

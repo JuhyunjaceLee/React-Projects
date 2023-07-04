@@ -64,18 +64,28 @@ export default function Projectpage() {
   ];
   const [filterList, setFilterList] = useState([]);
 
+  let [btnActive, setBtnActive] = useState("");
+
   const getLists = () => {
     setFilterList(lists);
   };
 
   const filterListsHandler = (e) => {
-    const filterBtn = e.target.innerHTML;
-    console.log(filterBtn);
+    const target = e.target;
+    const filterBtn = target.innerHTML;
     if (filterBtn === "ALL") {
       getLists();
+      setBtnActive(() => {
+        return target.value;
+      });
+      console.log(btnActive);
     } else {
       const filter = lists.filter((list) => list.type === filterBtn);
       setFilterList(filter);
+      setBtnActive(() => {
+        return target.value;
+      });
+      console.log(btnActive);
     }
   };
 
@@ -98,8 +108,9 @@ export default function Projectpage() {
       <ul className={styles.projects_btn_wrap}>
         {buttons.map((btn, idx) => (
           <li
-            className={styles.projects_btn}
+            className={"projects_btn" + (idx == btnActive ? " active" : "")}
             key={idx}
+            value={idx}
             onClick={filterListsHandler}
           >
             {btn}
