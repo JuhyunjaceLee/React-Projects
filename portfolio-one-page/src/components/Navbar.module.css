@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  color: var(--color-gray);
+  font-weight: 600;
+  background-color: var(--color-black);
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.navbar_wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar_logoFaceImg {
+  width: 50px;
+}
+.navbar_logoFaceImg:hover {
+  transform: rotate(45deg);
+}
+.navbar_logoTitle {
+  color: var(--color-orange);
+  font-size: 24px;
+  font-weight: 900;
+}
+.navbar_lists {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar_lists a:hover {
+  color: var(--color-orange);
+}

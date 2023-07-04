@@ -1,0 +1,11 @@
+.contents {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.contents_title {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px var(--color-orange);
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
