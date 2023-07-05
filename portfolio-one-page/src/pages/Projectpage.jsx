@@ -1,6 +1,9 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import commonstyles from "./Common.module.css";
 import styles from "./Projectpage.module.css";
+// import { RiPagesLine } from "react-icons/ri";
+import { MdOutlineEditNote } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
 
 const Projectpage = forwardRef(({ props }, ref) => {
   const buttons = ["ALL", "JS", "VUE", "REACT", "TEAM"];
@@ -11,6 +14,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "JS",
       url: "https://whats-in-my-closet.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/what%60sInMyCloset",
+      note: "https://desert-edam-bea.notion.site/What-s-In-My-Closet-74cb78cb3c9b4ab897b89217664fc8bd?pvs=4",
       state: "done",
     },
     {
@@ -19,6 +23,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "JS",
       url: "https://to-buy-lists.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/shoppingList",
+      note: "https://desert-edam-bea.notion.site/Shopping-List-498216a296dd4781a04a60c22574613a?pvs=4",
       state: "done",
     },
     {
@@ -27,6 +32,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "JS",
       url: "https://save-turtles-game.netlify.app",
       code: "https://github.com/JuhyunjaceLee/Javascript-Projects/tree/main/ploggingGame",
+      note: "https://desert-edam-bea.notion.site/Plogging-Game-9202f2ac1a8544f5b1d2447490cda5f0?pvs=4",
       state: "done",
     },
     {
@@ -35,6 +41,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "VUE",
       url: "https://stellular-granita-afbdbd.netlify.app/",
       code: "https://github.com/JuhyunjaceLee/mybox/tree/master/mybox_vue",
+      note: "https://desert-edam-bea.notion.site/MyBox-Portfolio-9450e85313254a679a1e0cdfee412e18?pvs=4",
       state: "done",
     },
     {
@@ -43,6 +50,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "REACT",
       url: "https://now-temperature.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/weather-app",
+      note: "https://desert-edam-bea.notion.site/Weather-App-efa034f6f65046fb8f3040fe5bfa2138?pvs=4",
       state: "done",
     },
     {
@@ -51,6 +59,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "REACT",
       url: "https://clothing-store-page.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-projects-shoppingApp",
+      note: "https://desert-edam-bea.notion.site/Shopping-app-c0bd8fed959542b49487a69c70955296?pvs=4",
       state: "done",
     },
     {
@@ -59,6 +68,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "REACT",
       url: "https://i-am-leejuhyun.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-one-page",
+      note: "https://desert-edam-bea.notion.site/Portfolio-one-page-e15c9e24a306414c827b53f68059e2e4?pvs=4",
       state: "done",
     },
     {
@@ -67,6 +77,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "REACT",
       url: "https://i-am-leejuhyun-ver2.netlify.app",
       code: "https://github.com/JuhyunjaceLee/React-Projects/tree/main/portfolio-page",
+      note: "https://desert-edam-bea.notion.site/Portfolio-page-ver-2-5916f61c79c14f57800283b7d3ecd062?pvs=4",
       state: "done",
     },
     {
@@ -75,6 +86,7 @@ const Projectpage = forwardRef(({ props }, ref) => {
       type: "TEAM",
       url: "#",
       code: "https://github.com/JuhyunjaceLee/cafe-for-study",
+      note: "https://desert-edam-bea.notion.site/Team-Project-978cfb880e2349c386f2922a19b920a7?pvs=4",
       state: "ing",
     },
   ];
@@ -105,6 +117,9 @@ const Projectpage = forwardRef(({ props }, ref) => {
 
   const goToProjectCode = (list) => {
     window.open(`${list.code}`, "_blank");
+  };
+  const goToProjectNote = (list) => {
+    window.open(`${list.note}`, "_blank");
   };
 
   useEffect(() => {
@@ -146,8 +161,16 @@ const Projectpage = forwardRef(({ props }, ref) => {
 
             <h3
               className={styles.projects_list_code}
+              onClick={() => goToProjectNote(list)}
+            >
+              <MdOutlineEditNote />
+              DESCRIPTION
+            </h3>
+            <h3
+              className={styles.projects_list_code}
               onClick={() => goToProjectCode(list)}
             >
+              <FaCode />
               소스코드 보기
             </h3>
           </div>
