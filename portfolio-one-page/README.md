@@ -5,7 +5,7 @@
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="https://i-am-leejuhyun.netlify.app">CLICK</a>
 
-## 프로젝트 MEMO URL - <a href="https://www.notion.so/Portfolio-one-page-e15c9e24a306414c827b53f68059e2e4">CLICK</a>
+## 프로젝트 DESCRIPTION URL - <a href="https://www.notion.so/Portfolio-one-page-e15c9e24a306414c827b53f68059e2e4">CLICK</a>
 
 ## 제작기간
 2023년 07월 03일 - 2023년 07월 05일
