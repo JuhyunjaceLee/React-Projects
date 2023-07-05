@@ -1,7 +1,7 @@
 # Portfolio Page
 
 ## Thumbnail
-<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/7be71973-783b-4a72-8348-5f099653557b" width="500"/>
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/ca863a91-0f4b-42d9-8027-09bc9c17d638" width="500"/>
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="https://i-am-leejuhyun.netlify.app">CLICK</a>
 
@@ -15,6 +15,16 @@
 #### - 기존의 포트폴리오가 한 눈에 보기 힘들다는 피드백을 받고, One-Page 구성으로 바꿈
 #### - React Hooks 활용해보기
 #### - useRef와 forwardRef 활용해보기
+
+* ### Description
+  - Navbar의 경우, 이름을 클릭하면 해당 Section으로 이동한다.
+  - 화면 제일 상단으로 올라갈 수 있는 scroll버튼은 400px 아래로 이동하면 나타나고, 클릭하면 화면이 제일 위로 올라간다.
+  - Home화면에는 Github 주소와 공부한 내용을 정리해 둔 Notion으로 바로 갈 수 있는 Link 버튼이 있다.
+  - AboutPage는 나의 이력과 경험들이 요약되어 있다.
+  - ProjectsPage에서는 해당 프로젝트의 소스코드와 프로젝트로 바로 갈 수 있는 Link가 연결되어있다.
+  - projects들을 type별로 sort할 수 있는 버튼이 있고, border-bottom으로 active 상태를 만들어주었다. default값은 "All"이다.
+  - SkillsPage는 내가 공부하고 사용할 수 있는 skill들과 다음에 학습할 skill들이 적혀있다.
+  - contact페이지는 전화번호, 이메일주소, github주소와 notion페이지로 갈 수 있는 Link가 연결되어있다.
 
 * ### SKILLS
 <div>
@@ -37,15 +47,10 @@
   - Array.map() method
   - window.Scroll()
 
-* ### 구현한 기능
-  - Navbar의 경우, 이름을 클릭하면 해당 Section으로 이동한다.
-  - 화면 제일 상단으로 올라갈 수 있는 scroll버튼은 400px 아래로 이동하면 나타나고, 클릭하면 화면이 제일 위로 올라간다.
-  - Home화면에는 Github 주소와 공부한 내용을 정리해 둔 Notion으로 바로 갈 수 있는 Link 버튼이 있다.
-  - AboutPage는 나의 이력과 경험들이 요약되어 있다.
-  - ProjectsPage에서는 해당 프로젝트의 소스코드와 프로젝트로 바로 갈 수 있는 Link가 연결되어있다.
-  - projects들을 type별로 sort할 수 있는 버튼이 있고, border-bottom으로 active 상태를 만들어주었다. default값은 "All"이다.
-  - SkillsPage는 내가 공부하고 사용할 수 있는 skill들과 다음에 학습할 skill들이 적혀있다.
-  - contact페이지는 전화번호, 이메일주소, github주소와 notion페이지로 갈 수 있는 Link가 연결되어있다.
+## 문제와 해결방법
+* ### <a href="https://desert-edam-bea.notion.site/Scroll-Event-7a99b1458c9a4e9aa34cb415c68ac483?pvs=4">Scroll-Event</a>
+* ### <a href="https://desert-edam-bea.notion.site/Button-Active-8c0c40ee88cd42319a28248f544a819b?pvs=4">Active Button</a>
+  
 
 ## 개선할 점
 * Post Css 내부에서 active 상태를 만들 수 있는 방법 연구해보기
