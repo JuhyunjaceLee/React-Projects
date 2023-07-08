@@ -1,11 +1,11 @@
 # Weather App
 
 ## Thumbnail
-<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3134afa2-d76f-431a-9688-33d4ec89e268" width="500"/>
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/a66e4f6a-fca7-45b8-8be7-aae658851375" width="500"/>
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="https://now-temperature.netlify.app">CLICK</a>
 
-## 프로젝트 MEMO URL - <a href="https://www.notion.so/Weather-App-efa034f6f65046fb8f3040fe5bfa2138">CLICK</a>
+## 프로젝트 DESCRIPTION URL  - <a href="https://www.notion.so/Weather-App-efa034f6f65046fb8f3040fe5bfa2138">CLICK</a>
 
 ## 제작기간
 2023년 05월 08일 - 2023년 05월 11일
@@ -40,6 +40,11 @@
   - 첫 화면이 로드될 때, 현재 위치 data를 받아와서 위치에 맞는 날씨 data를 불러온다.
   - 도시 이름의 버튼을 클릭하면 해당 도시에 맞는 날씨 data를 불러온다.
   - 처음 디폴트 버튼 값은 current 버튼이고, 도시 버튼을 클릭하면 해당 버튼이 노란색으로 변경된다.
+
+## 문제와 해결방법
+* ### <a href="https://desert-edam-bea.notion.site/null-ERROR-6dcccfa5c72f4ae6beca3ee236034553?pvs=4">useState의 초기값이 null일 때, 랜더링 Error</a>
+* ### <a href="https://desert-edam-bea.notion.site/useEffect-821e8c9729904367b7381783dddda806?pvs=4">useState의 초기값이 null일 때, 재랜더링 Error</a>
+* ### <a href="https://desert-edam-bea.notion.site/active-2791694209654ab6923f5f90cf5da1df?pvs=4">Ative Button</a>
 
 ## 개선할 점
 * 날씨에 따라 background-color를 변경해보기
