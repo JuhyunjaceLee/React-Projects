@@ -1,7 +1,7 @@
 # Portfolio Page
 
 ## Thumbnail
-<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/ca863a91-0f4b-42d9-8027-09bc9c17d638" width="500"/>
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/d1016996-96a8-40e5-823e-4e22abe63923" width="500"/>
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="https://i-am-leejuhyun.netlify.app">CLICK</a>
 
