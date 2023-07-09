@@ -1,11 +1,9 @@
 # Portfolio Page Version.2
 
 ## Thumbnail
-<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/3f3930fe-10c2-423c-b4dd-5338461a5d72" width="500"/>
+<img src="https://github.com/JuhyunjaceLee/React-Projects/assets/94448281/89be58c0-1c10-4bc0-81ef-364c9f5a9705" width="500"/>
 
 ## 프로젝트 URL - 프로젝트 바로가기<a href="https://i-am-leejuhyun-ver2.netlify.app">CLICK</a>
-
-## 프로젝트 MEMO URL - <a href="https://www.notion.so/Portfolio-page-5916f61c79c14f57800283b7d3ecd062">CLICK</a>
 
 ## 제작기간
 2023년 06월 01일 - 2023년 06월 15일
@@ -42,8 +40,9 @@
   - AboutPage는 2초 후, timeline animaition이 시작한다.
   - ProjectsPage에서는 해당 프로젝트의 소스코드와 프로젝트로 바로 갈 수 있는 Link가 연결되어있다.
   - projects들을 type별로 sort할 수 있는 버튼이 있다.
-  - PieChart라이브러리를 이용하여 skills를 원형그래프로 구현했다.
+  - <strike>PieChart라이브러리를 이용하여 skills를 원형그래프로 구현했다.</strike>
   - contact페이지는 github주소와 notion페이지로 갈 수 있는 Link가 연결되어있다.
+
 
 ## 개선할 점
 * 버튼에 active 상태를 주고, 클릭하는 버튼에 상태를 변경한다.
